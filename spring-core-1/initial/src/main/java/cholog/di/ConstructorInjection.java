@@ -9,6 +9,10 @@ public class ConstructorInjection {
     /*
     ConstructorInjection으로 InjectionBean 주입받기
      */
+    public ConstructorInjection(InjectionBean injectionBean) {
+        this.injectionBean = injectionBean;
+    }
+
     public String sayHello() {
         return injectionBean.hello();
     }
